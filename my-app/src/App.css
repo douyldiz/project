@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #2F4F4F;
+    --back-color: #000000;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 200vh;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+a {
+    color: var(--back-color);
+    text-decoration: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: var(--back-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+    border-top: 0.1rem solid white;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.header .search-site {
+    right: 5%;
+    background-color: white;
+    width: 25rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px rgba(0 0 0 / 50%);
+}
+
+.header .search-site i {
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.header .search-site input {
+    width: 75%;
+    position: var(--main-color);
+    right: 5%;
+    border-radius: var(--back-color);
+    border: #2F4F4F;
+    background-color: transparent;
+}
+
+.header .logo img {
+    height: 9rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    border: 0.1rem solid transparent;
+}
+
+/* home sayfasi */
+.home {
+    min-height: 100vh;
+    background: url(images/home.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -13.3rem;
+    display: flex;
+    align-items: center;
+    margin-right: -0.8rem;
+    margin-left: -0.8rem;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: var(--main-color);
+}
+
+/* home sayfasi */
+
+/* sale sayfasi */
+.SALE .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 0.5fr));
+    gap: 1.5rem;
+}
+
+.SALE .box-container .box {
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    background-color: white;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.SALE .box-container .box h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.SALE .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.SALE .box-container .box .price {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.SALE .box-container .box .price span {
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.SALE .box .btn {
+    color: white;
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+/* sale kismi */
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--main-color);
+}
+
+/* products kismi */
+
+.PRODUCTS .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 0.5fr));
+    gap: 1.5rem;
+}
+
+.PRODUCTS .box-container .box {
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    background-color: white;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.PRODUCTS .box-container .box h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.PRODUCTS .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.PRODUCTS .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.PRODUCTS .box-container .box .price {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.PRODUCTS .box-container .box .price span {
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.PRODUCTS .box .btn {
+    color: white;
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+/* products kismi */
+
+/* about kismi */
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* about kismi */
+
+/* contact kismi */
+.contact .row {
+    display: flex;
+    background-color: var(--back-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+}
+
+.contact .row .map {
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: none;
+    background: none;
+}
+
+.contact .row form .btn {
+    color: var(--main-color);
+    background-color: white;
+    font-weight: bold;
+}
+
+/* contact kismi */
+
+/* blog kismi */
+.blog .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blog .box-container .box {
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.blog .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blog .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blog .box-container .box .content span {
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blog .box-container .box .content {
+    padding: 2rem;
+}
+
+.blog .box-container .box .content title {
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+
+.blog .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--back-color);
+    padding: 1rem 0;
+}
+
+
